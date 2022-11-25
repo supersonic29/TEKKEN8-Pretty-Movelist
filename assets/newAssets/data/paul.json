@@ -2338,6 +2338,2056 @@
                     "damage": "50"
                 }
             ]
+        },
+        {
+            "name": "Water Parting Chop",
+            "startup": "20F",
+            "block": "-6",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": "50",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": true
+            },
+            "notes": [
+                "Old Patch Notes\u30fbHorming."
+            ],
+            "input": [
+                "ub,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "21"
+                }
+            ]
+        },
+        {
+            "name": "Jumping Knuckle",
+            "startup": "18F",
+            "block": "-12",
+            "normalHit": "-1",
+            "counterHit": "-1",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F",
+                "Old Patch Notes(Ver.4.00) - Fixed an issue in which the properties of the move were not the same as other characters."
+            ],
+            "input": [
+                "u",
+                "uf,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "12"
+                }
+            ]
+        },
+        {
+            "name": "High Elbow Drop",
+            "startup": "48F",
+            "block": "-18C",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F"
+            ],
+            "input": [
+                "ub",
+                "u",
+                "uf,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "35"
+                }
+            ]
+        },
+        {
+            "name": "Sobat",
+            "startup": "23F",
+            "block": "-19",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ"
+            ],
+            "input": [
+                "ub,3"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "25"
+                }
+            ]
+        },
+        {
+            "name": "Switch Jumping Knee Attack",
+            "startup": "21F",
+            "block": "-8",
+            "normalHit": "+5",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ17F",
+                "Old Patch Notes\u2013 Changed the opponent\u2019s behavior when the move lands as a counter hit (from KDN to LNC).",
+                "(Ver.4.00) - Increased the lower range of the attack."
+            ],
+            "input": [
+                "u",
+                "uf,3"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "18"
+                }
+            ]
+        },
+        {
+            "name": "Rising Toe Kick",
+            "startup": "15F",
+            "block": "-19",
+            "normalHit": "-8",
+            "counterHit": "-8",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F"
+            ],
+            "input": [
+                "ub,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "11"
+                }
+            ]
+        },
+        {
+            "name": "Rising Toe Kick",
+            "startup": "15F",
+            "block": "-13",
+            "normalHit": "KDN",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F"
+            ],
+            "input": [
+                "u,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "15"
+                }
+            ]
+        },
+        {
+            "name": "Rising Toe Kick",
+            "startup": "15F",
+            "block": "-13",
+            "normalHit": "LNC",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F",
+                "Old Patch Notes(Ver.4.00) - Increased the range of the attack."
+            ],
+            "input": [
+                "uf,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "13"
+                }
+            ]
+        },
+        {
+            "name": "Capital Punishment",
+            "startup": "35F",
+            "block": "+2C",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F",
+                "Disable Jump Cancel."
+            ],
+            "input": [
+                "uf,1+2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "25"
+                }
+            ]
+        },
+        {
+            "name": "Burning Knuckle",
+            "startup": "67F",
+            "block": "KDN",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ"
+            ],
+            "input": [],
+            "damageValues": [
+                {
+                    "level": "UB(M)",
+                    "damage": "45"
+                }
+            ]
+        },
+        {
+            "name": "Scissors Kick",
+            "startup": "32F",
+            "block": "-7",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ8F",
+                "Meaty 6F.",
+                "Old Patch Notes(Ver.2.20)\u30fbChanged the move to not hit multiple times when stopped by a Power Crush or Rage Art.",
+                "\u30fbEnabled the move to be parried using Jin's Parry.",
+                ""
+            ],
+            "input": [
+                "uf,3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Scissors Kick to Ukemi",
+            "startup": "32F",
+            "block": "-17G",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Ukemi Input timing 3F."
+            ],
+            "input": [],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Delay Rising Toekick",
+            "startup": "23F",
+            "block": "-11",
+            "normalHit": "LNC",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F"
+            ],
+            "input": [
+                "uf,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "25"
+                }
+            ]
+        },
+        {
+            "name": "Jump In Capital Punishment",
+            "startup": "70F",
+            "block": "+2C",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ"
+            ],
+            "input": [
+                "uf,1+2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "25"
+                }
+            ]
+        },
+        {
+            "name": "Jump In Burning Knuckle",
+            "startup": "102F",
+            "block": "KDN",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ"
+            ],
+            "input": [],
+            "damageValues": [
+                {
+                    "level": "UB(M)",
+                    "damage": "45"
+                }
+            ]
+        },
+        {
+            "name": "Jump In Taurus Cutter",
+            "startup": "52F",
+            "block": "-16",
+            "normalHit": "-5",
+            "counterHit": "-3",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ",
+                "Equivalent to "
+            ],
+            "input": [
+                "uf,3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "12"
+                }
+            ]
+        },
+        {
+            "name": "Jump In Moonsault Drop",
+            "startup": "87F",
+            "block": "KDN",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ"
+            ],
+            "input": [
+                "uf,1+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "UB(M)",
+                    "damage": "25"
+                }
+            ]
+        },
+        {
+            "name": "Solar Plexus Punch",
+            "startup": "16F",
+            "block": "-8",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Advance Input is unavailable",
+                "Start-up 17F in actualy",
+                "Old Patch Notes(Ver.4.00) - Changed the frame advantage when blocked from -11F to -8F."
+            ],
+            "input": [
+                "f,F,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Underhanded",
+            "startup": "19F",
+            "block": "-14",
+            "normalHit": "+7",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TC8F",
+                "Advance Input is unavailable",
+                "Start-up 20F in actualy",
+                "Old Patch Notes(Ver.4.20)- Changed the frame advantage when blocked from -18F to -14F.",
+                "- Distance to the opponent when blocked closer.",
+                "- Reduced recovery on hit by 4F for both players. \u203b There is no change in the frame advantage upon hit.",
+                "- Changed the crouching status from 12-37F to 8-37F. Since it ws high risk and weak homing, reduced recovery to compensate the shortening of the distance when blocked. Since the move got easily interrupted by an opponent's high attack, made the crouching status to start faster."
+            ],
+            "input": [
+                "f,f,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "17"
+                }
+            ]
+        },
+        {
+            "name": "Comeback Kick",
+            "startup": "17F",
+            "block": "+2",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": true,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": true
+            },
+            "notes": [
+                "Advance Input is unavailable",
+                "Start-up 18F in actualy",
+                "Old Patch Notes(Ver.4.00) - Changed the frame advantage when blocked from \u00b10F to +2F."
+            ],
+            "input": [
+                "f,F,3"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Comeback Kick to Shadow Step",
+            "startup": "17F",
+            "block": "+8",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": true,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": true
+            },
+            "notes": [
+                "Advance Input is unavailable",
+                "Start-up 18F in actualy",
+                "Old Patch Notes\u30fbNew Move."
+            ],
+            "input": [
+                "f,F,3,D"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Brawler Kick",
+            "startup": "15F",
+            "block": "-14",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": true,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Advance Input is unavailable",
+                "Start-up 16F in actualy",
+                "Old Patch Notes\u30fbWall Bounds."
+            ],
+            "input": [
+                "f,F,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "30"
+                }
+            ]
+        },
+        {
+            "name": "Flying Forearm",
+            "startup": "22F",
+            "block": "-18",
+            "normalHit": "KDN",
+            "counterHit": "KDN*",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ18F",
+                "Advance Input is unavailable.",
+                "Start-up 23F in actualy.",
+                "Meaty 20F."
+            ],
+            "input": [
+                "f,F,1+2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "28"
+                }
+            ]
+        },
+        {
+            "name": "Drop Kick",
+            "startup": "23F",
+            "block": "-10",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ14F",
+                "Advance Input is unavailable.",
+                "Start-up 24F in actualy."
+            ],
+            "input": [
+                "f,F,3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "35"
+                }
+            ]
+        },
+        {
+            "name": "Flying Brawler Kick",
+            "startup": "23F",
+            "block": "+10G",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ3F",
+                "Meaty 2F",
+                "Old Patch Notes(Ver.4.00) - Increased the lower range of the attack."
+            ],
+            "input": [
+                "f,f,f,3"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "30"
+                }
+            ]
+        },
+        {
+            "name": "Satellite Drop Kick",
+            "startup": "28F",
+            "block": "+17G",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ9F",
+                "Meaty 6F"
+            ],
+            "input": [
+                "f,f,f,3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "40"
+                }
+            ]
+        },
+        {
+            "name": "Dashing Low Drop Kick",
+            "startup": "20F",
+            "block": "-24",
+            "normalHit": "KDN",
+            "counterHit": "KDN*",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ7F"
+            ],
+            "input": [
+                "4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Jab",
+            "startup": "10F",
+            "block": "-5",
+            "normalHit": "+6",
+            "counterHit": "+6",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TC",
+                "Returns to crouching.",
+                "Input  to standing after moving"
+            ],
+            "input": [
+                "1"
+            ],
+            "damageValues": [
+                {
+                    "level": "SM",
+                    "damage": "5"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Straight",
+            "startup": "11F",
+            "block": "-4",
+            "normalHit": "+7",
+            "counterHit": "+7",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TC",
+                "Returns to crouching."
+            ],
+            "input": [
+                "2"
+            ],
+            "damageValues": [
+                {
+                    "level": "SM",
+                    "damage": "8"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Spin Low Kick",
+            "startup": "18F",
+            "block": "-16",
+            "normalHit": "-2",
+            "counterHit": "-2",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TC",
+                "Returns to crouching."
+            ],
+            "input": [
+                "3"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "12"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Chin Kick",
+            "startup": "14F",
+            "block": "-15",
+            "normalHit": "-4",
+            "counterHit": "-4",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TC",
+                "Returns to crouching."
+            ],
+            "input": [
+                "4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "12"
+                }
+            ]
+        },
+        {
+            "name": "Snap Uppercut",
+            "startup": "16F",
+            "block": "-10",
+            "normalHit": "LNC",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Old Patch Notes(Ver.4.00) - Increased the move\u2019s reach.",
+                "(Ver.4.20)- The move unnaturally missed the opponent when performed after blocking certain low attacks. Expanded the attack hit range downward."
+            ],
+            "input": [
+                "1"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "16"
+                }
+            ]
+        },
+        {
+            "name": "Jugular Thrust",
+            "startup": "12F",
+            "block": "-9",
+            "normalHit": "+6+18W",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": true,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Input  after CH to Charging.",
+                "Old Patch Notes(Ver.4.00) - Changed the frame advantage when blocked from -10F to -9F.",
+                "- Changed the frame advantage upon hit from +2F to +3F.",
+                "(Ver.4.20)- The move unnaturally missed the opponent when it was performed in close proximity. Therefore, the inner hit range of the attack is now expanded.",
+                "(Ver.5.00)\u30fbChanged the opponent's behavior on NH (+3F to +6F).",
+                " Wall crush inducing hit is implemented."
+            ],
+            "input": [
+                "2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "17"
+                }
+            ]
+        },
+        {
+            "name": "Head Kick",
+            "startup": "16F",
+            "block": "\u00b10",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "3"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "28"
+                }
+            ]
+        },
+        {
+            "name": "Toe Smash",
+            "startup": "11F",
+            "block": "-6",
+            "normalHit": "+5",
+            "counterHit": "+5",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Old Patch Notes(Ver.4.20)- Distance to the opponent on hit closer .Since the distance to the opponent upon hit was far, it was difficult to continue attacking in an advantageous situation. Shortened the distance to make it easier to attack."
+            ],
+            "input": [
+                "4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Backhand Chop",
+            "startup": "24F",
+            "block": "+1",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "df,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Uppercut",
+            "startup": "15F",
+            "block": "-12",
+            "normalHit": "-1",
+            "counterHit": "-1",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Old Patch Notes\u30fbRemove Knock Down."
+            ],
+            "input": [
+                "2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "10"
+                }
+            ]
+        },
+        {
+            "name": "Death Sandwich",
+            "startup": "15F",
+            "block": "-13C",
+            "normalHit": "LNC",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Combo from 1st NH.",
+                "Old Patch Notes\u30fbChanged NH to Knock Down."
+            ],
+            "input": [
+                "2,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "10"
+                },
+                {
+                    "level": "M",
+                    "damage": "10"
+                }
+            ]
+        },
+        {
+            "name": "Buzz Saw Kick",
+            "startup": "19F",
+            "block": "-12",
+            "normalHit": "KDN",
+            "counterHit": "KDN*",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Old Patch Notes\u30fbChanged NH to Knock Down."
+            ],
+            "input": [
+                "4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "22"
+                }
+            ]
+        },
+        {
+            "name": "Neck Cutter Kick",
+            "startup": "24F",
+            "block": "-6",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ13F"
+            ],
+            "input": [
+                "3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "28"
+                }
+            ]
+        },
+        {
+            "name": "Neck Cutter Kick to Ukemi",
+            "startup": "24F",
+            "block": "-26G",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ13F"
+            ],
+            "input": [],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "28"
+                }
+            ]
+        },
+        {
+            "name": "KI Power to Poison Mist",
+            "startup": "33F",
+            "block": "",
+            "normalHit": "",
+            "counterHit": "",
+            "totalFrames": "65",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Charging."
+            ],
+            "input": [
+                "1+2+3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "UB(H)",
+                    "damage": "30"
+                }
+            ]
+        },
+        {
+            "name": "KI Power to Spark Upper",
+            "startup": "63F",
+            "block": "\u00b10",
+            "normalHit": "LNC",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "f,d,df,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "24"
+                }
+            ]
+        },
+        {
+            "name": "KI Power to Flame Breath",
+            "startup": "73F",
+            "block": "\u00b10G",
+            "normalHit": "\u00b10G",
+            "counterHit": "\u00b10G",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Meaty 20F."
+            ],
+            "input": [
+                "d,df,f,1+2"
+            ],
+            "damageValues": [
+                {
+                    "level": "UB(H)",
+                    "damage": "30"
+                }
+            ]
+        },
+        {
+            "name": "Crazy Stomp (1)",
+            "startup": "19F",
+            "block": "-16",
+            "normalHit": "-5",
+            "counterHit": "-5",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "d,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Crazy Stomp (2)",
+            "startup": "19F",
+            "block": "-16",
+            "normalHit": "-5",
+            "counterHit": "-5",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "d,4,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "20"
+                },
+                {
+                    "level": "L",
+                    "damage": "8"
+                }
+            ]
+        },
+        {
+            "name": "Crazy Stomp",
+            "startup": "19F",
+            "block": "-16",
+            "normalHit": "-5",
+            "counterHit": "-5",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "d,4,4,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "20"
+                },
+                {
+                    "level": "L",
+                    "damage": "8"
+                },
+                {
+                    "level": "L",
+                    "damage": "6"
+                }
+            ]
+        },
+        {
+            "name": "Spin Knuckle Jab",
+            "startup": "8F",
+            "block": "-8",
+            "normalHit": "+3",
+            "counterHit": "+3",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "1",
+                "2"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "15"
+                }
+            ]
+        },
+        {
+            "name": "Blind Kick",
+            "startup": "13F",
+            "block": "-20",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "3"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Turn Sobat",
+            "startup": "18F",
+            "block": "-10",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Moonsault Drop",
+            "startup": "41F",
+            "block": "KDN",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "1+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "UB(M)",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Spin Knuckle",
+            "startup": "10F",
+            "block": "-2",
+            "normalHit": "+9",
+            "counterHit": "+9",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Returns to crouching."
+            ],
+            "input": [
+                "d,1",
+                "d,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "SM",
+                    "damage": "10"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Spin Kick",
+            "startup": "10F",
+            "block": "-11",
+            "normalHit": "+3",
+            "counterHit": "+3",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Returns to crouching."
+            ],
+            "input": [
+                "d,3",
+                "d,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "12"
+                }
+            ]
+        },
+        {
+            "name": "Crouch Dash",
+            "startup": "",
+            "block": "",
+            "normalHit": "",
+            "counterHit": "",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Advance Input is unavailable.",
+                "Cost 3F."
+            ],
+            "input": [
+                "f,d,df"
+            ],
+            "damageValues": [
+                {
+                    "level": "SP",
+                    "damage": "-"
+                }
+            ]
+        },
+        {
+            "name": "Shadow Lariat",
+            "startup": "15F",
+            "block": "+6",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Start-up 18F in actualy.",
+                "Meaty 4F.",
+                "Old Patch Notes(S3)\u2013 Shortened the recovery animation by 1 frame when the move hits."
+            ],
+            "input": [
+                "f,d,df,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Dark Smash",
+            "startup": "11F",
+            "block": "-10",
+            "normalHit": "LNC",
+            "counterHit": "LNC",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Start-up 14F in actualy."
+            ],
+            "input": [
+                "f,d,df,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Dark Inferno",
+            "startup": "31F",
+            "block": "KDN",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Start-up 35F in actualy."
+            ],
+            "input": [
+                "f,d,df,3"
+            ],
+            "damageValues": [
+                {
+                    "level": "UB(H)",
+                    "damage": "23"
+                }
+            ]
+        },
+        {
+            "name": "Dark Inferno to Cancel",
+            "startup": "31F",
+            "block": "",
+            "normalHit": "",
+            "counterHit": "",
+            "totalFrames": "42",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Old Patch Notes(S3)- New move."
+            ],
+            "input": [
+                "f,d,df,3,B"
+            ],
+            "damageValues": [
+                {
+                    "level": "SP",
+                    "damage": "-"
+                }
+            ]
+        },
+        {
+            "name": "Knee Vault",
+            "startup": "16F",
+            "block": "-9",
+            "normalHit": "KDN",
+            "counterHit": "KDN",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ11F",
+                "Start-up 19F in actualy."
+            ],
+            "input": [
+                "f,d,df,4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "22"
+                }
+            ]
+        },
+        {
+            "name": "Poison Mist",
+            "startup": "28F",
+            "block": "+7G",
+            "normalHit": "+7G",
+            "counterHit": "+7G",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Start-up 31F in actualy.",
+                "Meaty 10F."
+            ],
+            "input": [
+                "f,d,df,1+2"
+            ],
+            "damageValues": [
+                {
+                    "level": "UB(H)",
+                    "damage": "12"
+                }
+            ]
+        },
+        {
+            "name": "Rage Art",
+            "startup": "20F",
+            "block": "-22",
+            "normalHit": "Th",
+            "counterHit": "Th",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "TJ",
+                "Guard Point 8F",
+                "Old Patch Notes\u30fbNew Move."
+            ],
+            "input": [
+                "b,3+4"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "55"
+                }
+            ]
+        },
+        {
+            "name": "Rage Drive",
+            "startup": "20F",
+            "block": "+24G",
+            "normalHit": "+24G",
+            "counterHit": "+24G",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "After Hit, disable break throw.",
+                "Old Patch Notes\u30fbNew Move.",
+                "(Ver.5.01)\u30fbThe distance from the opponent on hit has been made closer."
+            ],
+            "input": [],
+            "damageValues": [
+                {
+                    "level": "UB(H)",
+                    "damage": "0"
+                }
+            ]
         }
     ]
 }
