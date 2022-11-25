@@ -7,7 +7,8 @@ const loadCharacterData = async (characterName) => {
 const damageValueMapping = {
     'M': 'Mid',
     'H': 'High',
-    'L': 'Low'
+    'L': 'Low',
+    'SM': 'Smid'
 }
 const additionalMoveInputsMapping = {
     'FC': 'Full Crouch'
