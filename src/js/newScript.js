@@ -1,4 +1,4 @@
-const baseAssetUrl = '/tk7movespretty/assets/newAssets/img/'
+const baseAssetUrl = './assets/newAssets/img/'
 
 const loadCharacterData = async (characterName) => {
     const response = await fetch(`./assets/newAssets/data/${characterName}.json`)
@@ -8,6 +8,9 @@ const damageValueMapping = {
     'M': 'Mid',
     'H': 'High',
     'L': 'Low'
+}
+const additionalMoveInputsMapping = {
+    'FC': 'Full Crouch'
 }
 // @TODO: Make On Click Load Moves
 const addCharacterThumbnail = async (characterJSON) => {
@@ -177,8 +180,15 @@ const createMoveInputs = (move) => {
     for (let i = 0; i < inputs.length; i++) {
         const moveInputs = inputs[i]
         moveInputs.forEach(input => {
-            movesHTML += `<img class='move-arrow' src='./assets/button/XBOX/${input}.svg' />`
+            if (Object.keys(additionalMoveInputsMapping).includes(input)) {
+                movesHTML += additionalMoveInputsMapping[input]
+            } else {
+                movesHTML += `<img class='move-arrow' src='./assets/button/XBOX/${input}.svg' />`
+            }
         })
+        if (i + 1 < inputs.length) {
+            movesHTML += ' or '
+        }
     }
     const htmlString = `
         <div class="move-string">
@@ -188,7 +198,7 @@ const createMoveInputs = (move) => {
     return htmlString
 }
 
-const hardCodedChars = ['paul', 'armorKing']
+const hardCodedChars = ['paul']
 
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
