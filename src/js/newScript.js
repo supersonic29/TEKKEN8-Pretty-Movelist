@@ -199,7 +199,7 @@ const createMoveInputs = (move) => {
     return htmlString
 }
 
-const hardCodedChars = ['paul','armorKing']
+const hardCodedChars = ['armorKing']
 
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
