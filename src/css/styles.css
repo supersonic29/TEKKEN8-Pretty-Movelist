@@ -22,7 +22,7 @@ body {
   src: url("./../../assets/fonts/CoreSans/CoreSansG-Light.ttf"); }
 
 body {
-  background-image: url("./../../assets/img/background.jpg");
+  background-image: url("./../../assets/img/background.png");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
