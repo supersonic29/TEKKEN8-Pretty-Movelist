@@ -1,4 +1,4 @@
-Based on the deprecated project Tekken 7 Pretty Movelist: [mspkvp.github.io/tk7movespretty/](https://mspkvp.github.io/tk7movespretty/)
+Based on the deprecated project Tekken 7 Pretty Movelist: https://github.com/mspkvp/tk7movespretty
 
 ---
 
