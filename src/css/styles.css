@@ -498,7 +498,7 @@ div.move-string::-webkit-scrollbar {
 
 .move-framestring, .move-dmgstring, .move-hitdmg,
 .move-hitlvlstring, .move-startf, .move-blockf,
-.move-hitf, .move-dmg {
+.move-hitf, .move-counterhitf, .move-dmg {
   display: flex;
   flex-direction: row;
   align-items: center; }
