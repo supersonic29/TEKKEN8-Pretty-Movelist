@@ -172,6 +172,8 @@ const addCharacterMoves = (characterJSON) => {
     characterJSON.moves.forEach((move, index) => {
         table.appendChild(createMoveHTML(index, move))
     });
+
+    document.getElementById('selected-title').innerText = characterJSON.character
 }
 
 // @TODO: Add Rage Art and shit before the move
