@@ -4,7 +4,7 @@
     "moves": [
         {
             "name": "Jab",
-            "startup": "10F",
+            "startup": "10",
             "block": "+1",
             "normalHit": "+8",
             "counterHit": "+8",
@@ -39,7 +39,7 @@
         },
         {
             "name": "Flash Punch Combo (2)",
-            "startup": "10F",
+            "startup": "10",
             "block": "-1",
             "normalHit": "+8",
             "counterHit": "+8",
@@ -78,7 +78,7 @@
         },
         {
             "name": "Flash Punch Combo",
-            "startup": "10F",
+            "startup": "10",
             "block": "-17",
             "normalHit": "+11",
             "counterHit": "+11",
