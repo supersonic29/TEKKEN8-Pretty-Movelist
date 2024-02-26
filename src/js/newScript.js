@@ -128,7 +128,7 @@ const createMoveHitFrame = (move) => {
     `
 }
 
-const createCounterHitFrame = (move) => {
+const createMoveCounterHitFrame = (move) => {
     return `
     <tr class="move-counterhitf">
         <td class="mv-id">Counter Hit</td>
