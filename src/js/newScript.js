@@ -102,29 +102,28 @@ const createDamageBreakdownString = (move) => {
     return `${damageValuesElement.outerHTML}`
 
 }
-const createMoveStartFrame = () => {
+const createMoveStartFrame = (move) => {
     return `
     <tr class="move-startf">
         <td class="mv-id">Start</td>
-        <td class="mv-frames">??</td>
+        <td class="mv-frames">${move.startup}</td>
     </tr>
     `
 }
 
-// @TODO: blknegative needs to be dynamically changed
-const createMoveBlockFrame = () => {
+const createMoveBlockFrame = (move) => {
     return `
     <tr class="move-blockf">
         <td class="mv-id">Block</td>
-        <td class="mv-frames blknegative">??</td>
+        <td class="mv-frames blknegative">${move.block}</td>
     </tr>    `
 }
 
-const createMoveHitFrame = () => {
+const createMoveHitFrame = (move) => {
     return `
     <tr class="move-hitf">
         <td class="mv-id">Hit</td>
-        <td class="mv-frames">??</td>
+        <td class="mv-frames">${move.normalHit}</td>
     </tr>
     `
 }
@@ -144,9 +143,9 @@ const createMoveHTML = (index, move) => {
                 <div class="move-special"></div>
                 <table class="move-frames">
                     <tbody>
-                        ${createMoveStartFrame()}
-                        ${createMoveBlockFrame()}
-                        ${createMoveHitFrame()}
+                        ${createMoveStartFrame(move)}
+                        ${createMoveBlockFrame(move)}
+                        ${createMoveHitFrame(move)}
                     </tbody>
                 </table>
             </div>
