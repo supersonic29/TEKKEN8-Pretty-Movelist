@@ -132,7 +132,7 @@ const createMoveCounterHitFrame = (move) => {
     return `
     <tr class="move-counterhitf">
         <td class="mv-id">Counter Hit</td>
-        <td class="mv-frames ${move.counterHit < 0 ? "blknegative": move.counterHit === 0 ? "blkzero" : "blkpositive"}"">${move.counterHit}</td>
+        <td class="mv-frames ${move.counterHit < 0 ? "blknegative": move.counterHit === 0 ? "blkzero" : "blkpositive"}">${move.counterHit}</td>
     </tr>
     `
 }
