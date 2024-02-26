@@ -127,6 +127,16 @@ const createMoveHitFrame = (move) => {
     </tr>
     `
 }
+
+const createCounterHitFrame = (move) => {
+    return `
+    <tr class="move-counterhitf">
+        <td class="mv-id">Counter Hit</td>
+        <td class="mv-frames">${move.counterHit}</td>
+    </tr>
+    `
+}
+
 const createMoveHTML = (index, move) => {
     const tableRow = document.createElement('tr')
 
@@ -146,6 +156,7 @@ const createMoveHTML = (index, move) => {
                         ${createMoveStartFrame(move)}
                         ${createMoveBlockFrame(move)}
                         ${createMoveHitFrame(move)}
+                        ${createMoveCounterHitFrame(move)}
                     </tbody>
                 </table>
             </div>
