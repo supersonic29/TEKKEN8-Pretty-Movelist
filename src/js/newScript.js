@@ -37,7 +37,7 @@ const addCharacterThumbnail = async (characterJSON) => {
 const createMoveNumber = (index) => {
     return `
         <div class="move-number">
-            ${index}
+            ${index+1}
         </div>`
 }
 const createMoveTitle = (move) => {
