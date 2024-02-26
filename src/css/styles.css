@@ -602,6 +602,9 @@ div.move-hitlvlstring::-webkit-scrollbar {
 .move-frames .blkpositive {
   color: #00ff00; }
 
+  .move-frames .blkzero {
+    color: white; }
+
 .move-frames .blkmild {
   color: #ffff00; }
 

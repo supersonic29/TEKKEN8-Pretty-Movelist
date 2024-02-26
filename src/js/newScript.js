@@ -115,7 +115,7 @@ const createMoveBlockFrame = (move) => {
     return `
     <tr class="move-blockf">
         <td class="mv-id">Block</td>
-        <td class="mv-frames blknegative">${move.block}</td>
+        <td class="mv-frames ${move.block < 0 ? "blknegative": move.block === 0 ? "blkzero" : "blkpositive"}">${move.block}</td>
     </tr>    `
 }
 
@@ -123,7 +123,7 @@ const createMoveHitFrame = (move) => {
     return `
     <tr class="move-hitf">
         <td class="mv-id">Hit</td>
-        <td class="mv-frames">${move.normalHit}</td>
+        <td class="mv-frames ${move.normalHit < 0 ? "blknegative": move.normalHit === 0 ? "blkzero" : "blkpositive"}">${move.normalHit}</td>
     </tr>
     `
 }
@@ -132,7 +132,7 @@ const createMoveCounterHitFrame = (move) => {
     return `
     <tr class="move-counterhitf">
         <td class="mv-id">Counter Hit</td>
-        <td class="mv-frames">${move.counterHit}</td>
+        <td class="mv-frames ${move.counterHit < 0 ? "blknegative": move.counterHit === 0 ? "blkzero" : "blkpositive"}"">${move.counterHit}</td>
     </tr>
     `
 }
