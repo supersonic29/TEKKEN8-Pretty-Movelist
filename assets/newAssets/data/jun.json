@@ -4,22 +4,26 @@
     "moves": [
         {
             "name": "Suikei",
-            "startup": "10F",
+            "startup": "10",
             "block": "+1",
             "normalHit": "+8",
             "counterHit": "+8",
             "totalFrames": " ",
             "frameProperties": {
-                "powerCrush": 0,
+                "powerCrushFrame": 0,
                 "jumpFrame": 0,
                 "crouchFrame": 0
             },
             "properties": {
-                "tailspin": false,
-                "wallBounce": false,
-                "wallCrushOnHit": false,
-                "wallCrushOnBlock": false,
-                "homing": false
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
+				
             },
             "notes": [
                 ""
@@ -36,7 +40,7 @@
         },
         {
             "name": "Suikei ＞ Izumo Smash to Izumo",
-            "startup": "10F",
+            "startup": "10",
             "block": "-1",
             "normalHit": "+8",
             "counterHit": "+13",
@@ -47,11 +51,14 @@
                 "crouchFrame": 0
             },
             "properties": {
-                "tailspin": false,
-                "wallBounce": false,
-                "wallCrushOnHit": false,
-                "wallCrushOnBlock": false,
-                "homing": false
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
             },
             "notes": [
                 "Combo from 1st NH"
@@ -83,11 +90,14 @@
                 "crouchFrame": 0
             },
             "properties": {
-                "tailspin": false,
-                "wallBounce": false,
-                "wallCrushOnHit": false,
-                "wallCrushOnBlock": false,
-                "homing": false
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
             },
             "notes": [
                 "Combo from 1st hit.",

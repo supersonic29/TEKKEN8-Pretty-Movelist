@@ -1,6 +1,6 @@
 {
     "character": "Reina",
-    "thumbnail": "reina.png",
+    "thumbnail": "reina.webp",
     "moves": [
         {
             "name": "Jab",
@@ -15,11 +15,14 @@
                 "crouchFrame": 0
             },
             "properties": {
-                "tailspin": false,
-                "wallBounce": false,
-                "wallCrushOnHit": false,
-                "wallCrushOnBlock": false,
-                "homing": false
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
             },
             "notes": [
                 ""
@@ -47,11 +50,14 @@
                 "crouchFrame": 0
             },
             "properties": {
-                "tailspin": false,
-                "wallBounce": false,
-                "wallCrushOnHit": false,
-                "wallCrushOnBlock": false,
-                "homing": false
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
             },
             "notes": [
                 "Combo from 1st NH"
@@ -83,11 +89,14 @@
                 "crouchFrame": 0
             },
             "properties": {
-                "tailspin": false,
-                "wallBounce": false,
-                "wallCrushOnHit": false,
-                "wallCrushOnBlock": false,
-                "homing": false
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
             },
             "notes": [
                 "Combo from 1st hit.",
