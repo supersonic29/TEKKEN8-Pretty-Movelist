@@ -1,0 +1,116 @@
+{
+    "character": "Reina",
+    "thumbnail": "reina.webp",
+    "moves": [
+        {
+            "name": "Jab",
+            "startup": "10F",
+            "block": "+1",
+            "normalHit": "+8",
+            "counterHit": "+8",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                }
+            ]
+        },
+        {
+            "name": "Flash Punch Combo (2)",
+            "startup": "10F",
+            "block": "-1",
+            "normalHit": "+8",
+            "counterHit": "+8",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Combo from 1st NH"
+            ],
+            "input": [
+                "1,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "H",
+                    "damage": "6"
+                }
+            ]
+        },
+        {
+            "name": "Flash Punch Combo",
+            "startup": "10F",
+            "block": "-17",
+            "normalHit": "+11",
+            "counterHit": "+11",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Combo from 1st hit.",
+                "Transitions to SEN, cancel with B",
+                "Third Hit can be delayed 11 frames"
+            ],
+            "input": [
+                "1,1,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "H",
+                    "damage": "6"
+                },
+                {
+                    "level": "M",
+                    "damage": "12"
+                }
+            ]
+        }
+    ]
+}
