@@ -678,14 +678,6 @@ p.armor {
 p.track {
   color: #0079ff; }
 
-.move-startf-seg td {
-  background: linear-gradient(rgba(12, 73, 90, 0), rgba(12, 73, 90, 0.75));
-  border-radius: 5px;
-  font-size: 1.3vmin; }
-  @media only screen and (max-width: 800px) {
-    .move-startf-seg td {
-      font-size: 10px; } }
-
 .preferences-dialog {
   position: absolute;
   left: calc(50vw - 400px);

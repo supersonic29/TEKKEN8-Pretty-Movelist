@@ -110,13 +110,6 @@ const createMoveStartFrame = () => {
     </tr>
     `
 }
-const createMoveStartFrameSegment = () => {
-    return `
-        <tr class="move-startf-seg">
-            <td>??F = ?+?+?</td>
-        </tr>
-    `
-}
 
 // @TODO: blknegative needs to be dynamically changed
 const createMoveBlockFrame = () => {
@@ -152,7 +145,6 @@ const createMoveHTML = (index, move) => {
                 <table class="move-frames">
                     <tbody>
                         ${createMoveStartFrame()}
-                        ${createMoveStartFrameSegment()}
                         ${createMoveBlockFrame()}
                         ${createMoveHitFrame()}
                     </tbody>

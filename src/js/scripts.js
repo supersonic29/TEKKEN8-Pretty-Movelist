@@ -300,16 +300,6 @@ var fetchmovelist = function fetchmovelist(index) {
 			html_string += "<table class=\"move-frames\">" +
 				"<tr class=\"move-startf\"><td class=\"mv-id\">Start</td><td class=\"mv-frames\">" +
 				data.moves[i].s + "F</td></tr>";
-			//Start Frames Segmented
-			if (data.moves[i].s > 0) {
-				html_string += "<tr class=\"move-startf-seg\"><td>" + data.moves[i].s + "F = ";
-				for (var sfs = 1; sfs < data.moves[i].ss.length; sfs++) {
-					html_string += data.moves[i].ss[sfs].s;
-					if (sfs + 1 < data.moves[i].ss.length)
-						html_string += "+";
-				}
-				html_string += "</td></tr>";
-			}
 			// Block F
 			html_string += "<tr class=\"move-blockf\"><td class=\"mv-id\">Block</td><td class=\"mv-frames " + (data.moves[i].blk > -1 ? "blkpositive\">+" : data.moves[i].blk < -10 ? "blknegative\">" : "blkmild\">") + data.moves[i].blk + "</td></tr>";
 			// Hit Adv F
