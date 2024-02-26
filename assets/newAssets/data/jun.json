@@ -79,7 +79,7 @@
         },
         {
             "name": "Spear Step",
-            "startup": "10F",
+            "startup": "10",
             "block": "-3",
             "normalHit": "+6",
             "counterHit": "+6",
