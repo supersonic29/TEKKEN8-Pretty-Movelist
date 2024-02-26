@@ -1,0 +1,112 @@
+{
+    "character": "Jun",
+    "thumbnail": "jun.webp",
+    "moves": [
+        {
+            "name": "Suikei",
+            "startup": "10F",
+            "block": "+1",
+            "normalHit": "+8",
+            "counterHit": "+8",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                }
+            ]
+        },
+        {
+            "name": "Suikei ＞ Izumo Smash to Izumo",
+            "startup": "10F",
+            "block": "-1",
+            "normalHit": "+8",
+            "counterHit": "+13",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Combo from 1st NH"
+            ],
+            "input": [
+                "1,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "M",
+                    "damage": "15"
+                }
+            ]
+        },
+        {
+            "name": "Spear Step",
+            "startup": "10F",
+            "block": "-3",
+            "normalHit": "+6",
+            "counterHit": "+6",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tailspin": false,
+                "wallBounce": false,
+                "wallCrushOnHit": false,
+                "wallCrushOnBlock": false,
+                "homing": false
+            },
+            "notes": [
+                "Combo from 1st hit.",
+                "",
+                ""
+            ],
+            "input": [
+                "1,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "H",
+                    "damage": "8"
+                }
+            ]
+        }
+    ]
+}
