@@ -181,7 +181,7 @@ const addCharacterMoves = (characterJSON) => {
 // @TODO: Add Rage Art and shit before the move
 const createMoveInputs = (move) => {
     let movesHTML = ""
-    const inputs = move.input.map(move => move.split(','))
+    const inputs = move.input.map(move => move.split(/(\[|\]|\b(?=\d)|\b(?=\w))/))
     for (let i = 0; i < inputs.length; i++) {
         const moveInputs = inputs[i]
         moveInputs.forEach(input => {
