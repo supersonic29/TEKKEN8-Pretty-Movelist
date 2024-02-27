@@ -188,7 +188,7 @@ const createMoveInputs = (move) => {
             if (Object.keys(additionalMoveInputsMapping).includes(input)) {
                 movesHTML += additionalMoveInputsMapping[input]
             } else {
-                movesHTML += `<img class='move-arrow' src='./assets/button/XBOX/${input}.svg' />`
+                movesHTML += `<img class='move-arrow' src='./assets/newAssets/btn/${input}.png' />`
             }
         })
         if (i + 1 < inputs.length) {
