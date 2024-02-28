@@ -178,10 +178,38 @@ const addCharacterMoves = (characterJSON) => {
     document.getElementById('selected-title').innerText = characterJSON.character
 }
 
+function processString(input) {
+    // Step One
+    let stepOne = input.replace(/\s/g, '$').replace(/([a-zA-Z])\+([0-9])/g, '$1$2');
+
+    // Step Two
+    let stepTwo = stepOne.split(/([,\~\[\]\$])|(?<=[a-zA-Z])(?=\d)|(?<=\d)(?=[a-zA-Z])/).filter(Boolean);
+
+    // Step Three
+    for (let i = 0; i < stepTwo.length; i++) {
+        if (stepTwo[i] === 'T!' && stepTwo[i - 1] === '$') {
+            stepTwo.splice(i - 1, 1);
+        }
+    }
+
+    // Step Four
+    for (let i = 0; i < stepTwo.length; i++) {
+        if (/^[A-Z]{3}$/.test(stepTwo[i]) && stepTwo[i + 1] === '$') {
+            stepTwo.splice(i + 1, 1);
+        }
+    }
+
+    // Step Five
+    let stepFive = stepTwo.filter(element => element !== ',' && element !== '~');
+
+    return stepFive;
+}
+
 // @TODO: Add Rage Art and shit before the move
 const createMoveInputs = (move) => {
     let movesHTML = ""
-    const inputs = move.input.map(move => move.split(','))
+    //const inputs = move.input.map(move => move.split(','))
+    const inputs = processString(move)
     for (let i = 0; i < inputs.length; i++) {
         const moveInputs = inputs[i]
         moveInputs.forEach(input => {
