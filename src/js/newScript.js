@@ -208,8 +208,7 @@ function processString(input) {
 // @TODO: Add Rage Art and shit before the move
 const createMoveInputs = (move) => {
     let movesHTML = ""
-    //const inputs = move.input.map(move => move.split(','))
-    const inputs = processString(move)
+    /*const inputs = move.input.map(move => move.split(','))
     for (let i = 0; i < inputs.length; i++) {
         const moveInputs = inputs[i]
         moveInputs.forEach(input => {
@@ -222,7 +221,16 @@ const createMoveInputs = (move) => {
         if (i + 1 < inputs.length) {
             movesHTML += ' or '
         }
-    }
+    }*/
+    const inputs = processString(move)
+    inputs.forEach(input => {
+        if (Object.keys(additionalMoveInputsMapping).includes(input)) {
+            movesHTML += additionalMoveInputsMapping[input]
+        } else {
+            movesHTML += `<img class='move-arrow' src='./assets/newAssets/btn/${input}.png' />`
+        }
+    });
+    
     const htmlString = `
         <div class="move-string">
             ${movesHTML}
