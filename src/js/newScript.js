@@ -222,7 +222,7 @@ const createMoveInputs = (move) => {
             movesHTML += ' or '
         }
     }*/
-    const inputs = processString(move)
+    const inputs = processString(move.input)
     inputs.forEach(input => {
         if (Object.keys(additionalMoveInputsMapping).includes(input)) {
             movesHTML += additionalMoveInputsMapping[input]
