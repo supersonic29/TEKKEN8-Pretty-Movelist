@@ -313,6 +313,46 @@
                     "damage": "13"
                 }
             ]
+        },
+        {
+            "name": "Combo Test",
+            "startup": "15",
+            "block": "-12",
+            "normalHit": "+20",
+            "counterHit": "+20",
+            "totalFrames": " ",
+			"wallHit": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": true,
+				"launchCH": true,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"chipDamage": false,
+				"heatEngager": false
+            },
+            "notes": [
+                " "
+            ],
+            "input": [
+                "b4 T! f,f3+4 df2 df1 f2,3~F SEN 1,2 [2~1]"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "13"
+                }
+            ]
         }
     ]
 }
