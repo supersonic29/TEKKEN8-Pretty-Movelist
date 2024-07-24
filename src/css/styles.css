@@ -419,9 +419,21 @@ table {
   max-width: 100%;
   justify-content: space-between; }
 
+.move-notes {
+  color: #ffffff;
+  font-family: "Core Sans G", Arial, sans-serif;
+  border: 2px solid rgba(12, 73, 90, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  max-width: 100%;
+  text-align: left;
+}
+
 .move-button, .move-arrow {
-  width: 40px;
-  height: auto;
+  width: auto;
+  height: 40px;
   padding: 1px; }
 
 .move-info {
@@ -576,7 +588,7 @@ div.move-hitlvlstring::-webkit-scrollbar {
   margin: 0; }
 
 .move-frames {
-  width: 135px;
+  width: 180px;
   margin-left: 5px;
   margin-right: 5px; }
   @media only screen and (max-width: 800px) {
@@ -588,12 +600,12 @@ div.move-hitlvlstring::-webkit-scrollbar {
 
 .move-frames .mv-id {
   text-transform: uppercase;
-  width: 135px;
+  min-width: 100px;
   text-align: left;
   font-weight: bold; }
 
 .move-frames .mv-frames {
-  width: 30px;
+  min-width: 30px;
   text-align: right; }
 
 .move-frames .blknegative {
@@ -780,3 +792,4 @@ p.track {
     max-width: 98vw; }
   .move-button, .move-arrow {
     width: 30px; } }
+    

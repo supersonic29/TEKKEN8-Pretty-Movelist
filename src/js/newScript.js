@@ -102,11 +102,25 @@ const createDamageBreakdownString = (move) => {
     return `${damageValuesElement.outerHTML}`
 
 }
+
+const getHitProperty = (hitProperty) => {
+    if (hitProperty.launchNH) return 'LNC'
+    if (hitProperty.knockdownNH) return 'KDN'
+    return ''
+}
+
+const getCounterHitProperty = (hitProperty) => {
+    if (hitProperty.launchCH) return 'LNC'
+    if (hitProperty.knockdownCH) return 'KDN'
+    return ''
+}
+
 const createMoveStartFrame = (move) => {
     return `
     <tr class="move-startf">
         <td class="mv-id">Start</td>
         <td class="mv-frames">${move.startup}</td>
+        <td></td>
     </tr>
     `
 }
@@ -116,6 +130,7 @@ const createMoveBlockFrame = (move) => {
     <tr class="move-blockf">
         <td class="mv-id">Block</td>
         <td class="mv-frames ${move.block < 0 ? "blknegative": move.block === 0 ? "blkzero" : "blkpositive"}">${move.block}</td>
+        <td></td>
     </tr>    `
 }
 
@@ -124,6 +139,7 @@ const createMoveHitFrame = (move) => {
     <tr class="move-hitf">
         <td class="mv-id">Hit</td>
         <td class="mv-frames ${move.normalHit < 0 ? "blknegative": move.normalHit === 0 ? "blkzero" : "blkpositive"}">${move.normalHit}</td>
+        <td>${getHitProperty(move.properties)}</td>
     </tr>
     `
 }
@@ -131,15 +147,15 @@ const createMoveHitFrame = (move) => {
 const createMoveCounterHitFrame = (move) => {
     return `
     <tr class="move-counterhitf">
-        <td class="mv-id">Counter Hit</td>
+        <td  class="mv-id">Counter Hit</td>
         <td class="mv-frames ${move.counterHit < 0 ? "blknegative": move.counterHit === 0 ? "blkzero" : "blkpositive"}">${move.counterHit}</td>
+        <td>${getCounterHitProperty(move.properties)}</td>
     </tr>
     `
 }
 
 const createMoveHTML = (index, move) => {
     const tableRow = document.createElement('tr')
-
     const HTML = `
     <td class="move-card">
         <div class="move-info">
@@ -161,7 +177,24 @@ const createMoveHTML = (index, move) => {
                 </table>
             </div>
         </div>
-    </tr>
+    </td>
+    `
+    tableRow.innerHTML = HTML
+    return tableRow
+
+}
+
+// @todo Fix the styling here
+const createNotesHTML = (notes) => {
+    const tableRow = document.createElement('tr')
+    const HTML = `
+    <td class="move-notes">
+        ${notes.map((note) => `
+        <div class="move-info">
+            ${note}
+        </div>
+        `).join('')}
+    </td>
     `
     tableRow.innerHTML = HTML
     return tableRow
@@ -171,8 +204,13 @@ const addCharacterMoves = (characterJSON) => {
     const MOVE_LIST_TAB_ID = 'moveTable'
     const table = document.getElementById(MOVE_LIST_TAB_ID)
     table.innerHTML = ""
+    
     characterJSON.moves.forEach((move, index) => {
         table.appendChild(createMoveHTML(index, move))
+        if (move.notes) {
+            console.log(move.notes)
+            table.appendChild(createNotesHTML(move.notes))
+        }
     });
 
     document.getElementById('selected-title').innerText = characterJSON.character
@@ -246,7 +284,6 @@ const main = async () => {
         const characterJSON = await loadCharacterData(hardCodedChars[i])
         addCharacterThumbnail(characterJSON)
         addCharacterMoves(characterJSON)
-
     }
 }
 
