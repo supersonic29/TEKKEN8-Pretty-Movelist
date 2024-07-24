@@ -166,7 +166,34 @@ const createMoveHTML = (index, move) => {
         </div>
         <div class="move-extra">
             <div class="mv-section">
-                <div class="move-special"></div>
+                <div class="move-special">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div >
+                        ${move.frameProperties.jumpFrame >= 0 ? 'JUMP START' : ''}
+                        </div>
+                        <div>
+                            ${move.frameProperties.jumpFrame >= 0 ? move.frameProperties.jumpFrame : ''}
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                    <div>
+                    ${move.frameProperties.crouchFrame >= 0 ? 'CROUCH START' : ''}
+                        </div>
+                        <div>
+                            ${move.frameProperties.crouchFrame >= 0 ? move.frameProperties.crouchFrame : ''}
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="white-space: nowrap;">
+                        ${move.frameProperties.powerCrush >= 0 ? 'P-CRUSH' : ''}
+                        </div>
+                        <div>
+                            ${move.frameProperties.powerCrush >= 0 ? '&nbsp;' + move.frameProperties.powerCrush : ''}
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
                 <table class="move-frames">
                     <tbody>
                         ${createMoveStartFrame(move)}
