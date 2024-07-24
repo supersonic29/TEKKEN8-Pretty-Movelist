@@ -21,7 +21,7 @@
 				"forceCrouch": false,
 				"floorBreak": false,
 				"wallBreak": false,
-				"chipDamage": false,
+				"eraseRecoverable": false,
 				"heatEngager": false
 				
             },
@@ -57,7 +57,7 @@
 				"forceCrouch": false,
 				"floorBreak": false,
 				"wallBreak": false,
-				"chipDamage": false,
+				"eraseRecoverable": false,
 				"heatEngager": false
             },
             "notes": [
@@ -96,7 +96,7 @@
 				"forceCrouch": false,
 				"floorBreak": false,
 				"wallBreak": false,
-				"chipDamage": false,
+				"eraseRecoverable": false,
 				"heatEngager": false
             },
             "notes": [
