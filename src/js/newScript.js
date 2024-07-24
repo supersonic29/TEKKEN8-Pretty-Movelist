@@ -189,17 +189,17 @@ const createMoveHTML = (index, move) => {
         <div class="move-extra">
             <div class="mv-section">
                 <div class="move-special">
-                    <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; justify-content:  flex-end;">
                         <div >
-                        ${move.frameProperties.jumpFrame >= 0 ? 'JUMP START' : ''}
+                        ${move.frameProperties.jumpFrame >= 0 ? 'JUMP START&nbsp;' : ''}
                         </div>
                         <div>
                             ${move.frameProperties.jumpFrame >= 0 ? move.frameProperties.jumpFrame : ''}
                         </div>
                     </div>
-                    <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex; justify-content: flex-end;">
                     <div>
-                    ${move.frameProperties.crouchFrame >= 0 ? 'CROUCH START' : ''}
+                    ${move.frameProperties.crouchFrame >= 0 ? 'CROUCH START&nbsp;' : ''}
                         </div>
                         <div>
                             ${move.frameProperties.crouchFrame >= 0 ? move.frameProperties.crouchFrame : ''}
@@ -207,10 +207,10 @@ const createMoveHTML = (index, move) => {
                     </div>
                     <div style="display: flex;">
                         <div style="white-space: nowrap;">
-                        ${move.frameProperties.powerCrushFrame >= 0 ? 'P-CRUSH' : ''}
+                        ${move.frameProperties.powerCrushFrame > 0 ? 'P-CRUSH' : ''}
                         </div>
                         <div>
-                            ${move.frameProperties.powerCrushFrame >= 0 ? '&nbsp;' + move.frameProperties.powerCrushFrame : ''}
+                            ${move.frameProperties.powerCrushFrame > 0 ? '&nbsp;' + move.frameProperties.powerCrushFrame : ''}
                         </div>
                         <div style="display: flex; flex-wrap: wrap;"> 
                             ${createBadgeImages(move)}

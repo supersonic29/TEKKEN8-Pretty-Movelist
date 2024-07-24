@@ -856,7 +856,7 @@ div.move-hitlvlstring::-webkit-scrollbar {
 }
 
 .move-special {
-  max-width: 258px;
+  max-width: 222px;
 }
 
 @media only screen and (max-width: 800px) {
