@@ -302,8 +302,7 @@ table {
 }
 
 .char-movelist {
-  /*width: 600px;*/
-  max-width: 970px;
+  width: 80vw;
   height: 100%;
   margin-left: 3px;
 }
@@ -857,7 +856,7 @@ div.move-hitlvlstring::-webkit-scrollbar {
 }
 
 .move-special {
-  width: 140px;
+  max-width: 258px;
 }
 
 @media only screen and (max-width: 800px) {

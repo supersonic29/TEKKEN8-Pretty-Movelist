@@ -37,7 +37,7 @@ const addCharacterThumbnail = async (characterJSON) => {
 const createMoveNumber = (index) => {
     return `
         <div class="move-number">
-            ${index+1}
+            ${index + 1}
         </div>`
 }
 const createMoveTitle = (move) => {
@@ -129,7 +129,7 @@ const createMoveBlockFrame = (move) => {
     return `
     <tr class="move-blockf">
         <td class="mv-id">Block</td>
-        <td class="mv-frames ${move.block < 0 ? "blknegative": move.block === 0 ? "blkzero" : "blkpositive"}">${move.block}</td>
+        <td class="mv-frames ${move.block < 0 ? "blknegative" : move.block === 0 ? "blkzero" : "blkpositive"}">${move.block}</td>
         <td></td>
     </tr>    `
 }
@@ -138,7 +138,7 @@ const createMoveHitFrame = (move) => {
     return `
     <tr class="move-hitf">
         <td class="mv-id">Hit</td>
-        <td class="mv-frames ${move.normalHit < 0 ? "blknegative": move.normalHit === 0 ? "blkzero" : "blkpositive"}">${move.normalHit}</td>
+        <td class="mv-frames ${move.normalHit < 0 ? "blknegative" : move.normalHit === 0 ? "blkzero" : "blkpositive"}">${move.normalHit}</td>
         <td>${getHitProperty(move.properties)}</td>
     </tr>
     `
@@ -148,10 +148,32 @@ const createMoveCounterHitFrame = (move) => {
     return `
     <tr class="move-counterhitf">
         <td  class="mv-id">Counter Hit</td>
-        <td class="mv-frames ${move.counterHit < 0 ? "blknegative": move.counterHit === 0 ? "blkzero" : "blkpositive"}">${move.counterHit}</td>
+        <td class="mv-frames ${move.counterHit < 0 ? "blknegative" : move.counterHit === 0 ? "blkzero" : "blkpositive"}">${move.counterHit}</td>
         <td>${getCounterHitProperty(move.properties)}</td>
     </tr>
     `
+}
+
+const badgeToImageMap = {
+    'powerCrush': 'powerCrush.png',
+    'homing': 'homing.png',
+    'tornado': 'tornado.png',
+    'forceCrouch': 'forceCrouch.png',
+    'heatEngager': 'heatEngager.png',
+    'eraseRecoverable': 'eraseRecoverable.png',
+    'wallBreak': 'wallBreak.png',
+    'floorBreak': 'floorBreak.png',
+}
+
+const createBadgeImages = (move) => {
+    const badgeImages = Object.keys(badgeToImageMap).map(badgeName => {
+        const badge = move.properties[badgeName]
+        console.log('THE BADGE!', badge)
+        if (!badge) return null
+        
+        return `<img style="width: 36px; height: 36px;" src='/assets/newAssets/${badgeToImageMap[badgeName]}' />`
+    }).filter(x => x)
+    return badgeImages.join('')
 }
 
 const createMoveHTML = (index, move) => {
@@ -185,12 +207,13 @@ const createMoveHTML = (index, move) => {
                     </div>
                     <div style="display: flex;">
                         <div style="white-space: nowrap;">
-                        ${move.frameProperties.powerCrush >= 0 ? 'P-CRUSH' : ''}
+                        ${move.frameProperties.powerCrushFrame >= 0 ? 'P-CRUSH' : ''}
                         </div>
                         <div>
-                            ${move.frameProperties.powerCrush >= 0 ? '&nbsp;' + move.frameProperties.powerCrush : ''}
+                            ${move.frameProperties.powerCrushFrame >= 0 ? '&nbsp;' + move.frameProperties.powerCrushFrame : ''}
                         </div>
-                        <div>
+                        <div style="display: flex; flex-wrap: wrap;"> 
+                            ${createBadgeImages(move)}
                         </div>
                     </div>
                 </div>
@@ -205,18 +228,8 @@ const createMoveHTML = (index, move) => {
             </div>
         </div>
     </td>
-    `
-    tableRow.innerHTML = HTML
-    return tableRow
-
-}
-
-// @todo Fix the styling here
-const createNotesHTML = (notes) => {
-    const tableRow = document.createElement('tr')
-    const HTML = `
     <td class="move-notes">
-        ${notes.map((note) => `
+    ${move.notes.map((note) => `
         <div class="move-info">
             ${note}
         </div>
@@ -227,17 +240,14 @@ const createNotesHTML = (notes) => {
     return tableRow
 
 }
+
 const addCharacterMoves = (characterJSON) => {
     const MOVE_LIST_TAB_ID = 'moveTable'
     const table = document.getElementById(MOVE_LIST_TAB_ID)
     table.innerHTML = ""
-    
+
     characterJSON.moves.forEach((move, index) => {
         table.appendChild(createMoveHTML(index, move))
-        if (move.notes) {
-            console.log(move.notes)
-            table.appendChild(createNotesHTML(move.notes))
-        }
     });
 
     document.getElementById('selected-title').innerText = characterJSON.character
@@ -295,7 +305,7 @@ const createMoveInputs = (move) => {
             movesHTML += `<img class='move-arrow' src='./assets/newAssets/btn/${input}.png' />`
         }
     });
-    
+
     const htmlString = `
         <div class="move-string">
             ${movesHTML}
@@ -304,7 +314,7 @@ const createMoveInputs = (move) => {
     return htmlString
 }
 
-const hardCodedChars = ['jun','reina']
+const hardCodedChars = ['jun', 'reina']
 
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
