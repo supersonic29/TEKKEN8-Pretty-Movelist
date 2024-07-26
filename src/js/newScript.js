@@ -171,7 +171,7 @@ const createBadgeImages = (move) => {
         console.log('THE BADGE!', badge)
         if (!badge) return null
         
-        return `<img style="width: 36px; height: 36px;" src='/assets/newAssets/${badgeToImageMap[badgeName]}' />`
+        return `<img style="width: 36px; height: 36px;" src='./assets/newAssets/${badgeToImageMap[badgeName]}' />`
     }).filter(x => x)
     return badgeImages.join('')
 }
