@@ -314,7 +314,7 @@ const createMoveInputs = (move) => {
     return htmlString
 }
 
-const hardCodedChars = ['jun', 'reina']
+const hardCodedChars = ['alisa','jun', 'reina']
 
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
