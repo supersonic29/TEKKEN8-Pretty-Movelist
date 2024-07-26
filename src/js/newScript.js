@@ -1,8 +1,13 @@
 const baseAssetUrl = './assets/newAssets/img/'
 
 const loadCharacterData = async (characterName) => {
-    const response = await fetch(`./assets/newAssets/data/${characterName}.json`)
-    return await response.json()
+    try {
+        const response = await fetch(`./assets/newAssets/data/${characterName}.json`)
+        return await response.json()
+    } catch (e) {
+        return null
+    }
+    
 }
 const damageValueMapping = {
     'M': 'Mid',
@@ -319,6 +324,7 @@ const hardCodedChars = ['alisa','jun', 'reina']
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
         const characterJSON = await loadCharacterData(hardCodedChars[i])
+        if (characterJSON === null) continue
         addCharacterThumbnail(characterJSON)
         addCharacterMoves(characterJSON)
     }
