@@ -319,6 +319,7 @@ const createMoveInputs = (move) => {
     return htmlString
 }
 
+// @TODO: Caleb, add Webpack support
 const hardCodedChars = ['alisa','jun', 'reina']
 
 const main = async () => {
@@ -332,5 +333,4 @@ const main = async () => {
 
 (async function () {
     main()
-
 })()
