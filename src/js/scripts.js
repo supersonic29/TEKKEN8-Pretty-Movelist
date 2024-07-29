@@ -136,8 +136,8 @@ var toggleCharMenu = function () {
 };
 
 window.changePlatform =  (index) => {
-	bl_choice = index;
-	
+	document.cookie = `bl_choice=${index}`
+	window.main()
 };
 
 var importdata = async function importdata() {

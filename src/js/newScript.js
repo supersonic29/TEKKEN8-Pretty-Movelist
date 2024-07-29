@@ -287,7 +287,39 @@ function processString(input) {
 
     return stepFive;
 }
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
 
+const BUTTON_LAYOUTS = [
+    '',
+    'ps',
+    'xb'
+]
+const LAYOUT_AGNOSTIC = [
+    '1+2+3+4', '1+2+4', '1+3+4', '1+4', '2+3+4', 
+    '2+4', '3+4', '4', '1+2+3', '1+2', '1+3', 
+    '1', '2+3', '2', '3'
+];
+const getButtonLayout= (input) => {
+    const buttonLayoutIndex = getCookie('bl_choice')
+    if (!LAYOUT_AGNOSTIC.includes(input)) return ""
+    
+    return BUTTON_LAYOUTS[buttonLayoutIndex]
+
+}
 // @TODO: Add Rage Art and shit before the move
 const createMoveInputs = (move) => {
     let movesHTML = ""
@@ -307,10 +339,13 @@ const createMoveInputs = (move) => {
     }*/
     const inputs = processString(move.input[0])
     inputs.forEach(input => {
+        const buttonLayout = getButtonLayout(input)
+        const buttonLayoutFolder = buttonLayout === "" ? "" : `${buttonLayout}/`  
         if (Object.keys(additionalMoveInputsMapping).includes(input)) {
             movesHTML += additionalMoveInputsMapping[input]
         } else {
-            movesHTML += `<img class='move-arrow' src='./assets/newAssets/btn/${input}.png' />`
+            
+            movesHTML += `<img class='move-arrow' src='./assets/newAssets/btn/${buttonLayoutFolder}${input}.png' />`
         }
     });
 
@@ -325,7 +360,13 @@ const createMoveInputs = (move) => {
 // @TODO: Caleb, Add Static Site Rendering
 const hardCodedChars = ['alisa','jun', 'reina']
 
-const main = async () => {
+window.main = async () => {
+    const ID = 'characterSelect';
+    const tableElement = document.getElementById(ID);
+
+    // Clear all contents inside the table element
+    tableElement.innerHTML = '';
+
     for (let i = 0; i < hardCodedChars.length; i++) {
         const characterJSON = await loadCharacterData(hardCodedChars[i])
         if (characterJSON === null) continue
