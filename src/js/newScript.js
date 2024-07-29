@@ -1,3 +1,5 @@
+import '../css/styles.css'
+
 const baseAssetUrl = './assets/newAssets/img/'
 
 const loadCharacterData = async (characterName) => {
