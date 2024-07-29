@@ -334,6 +334,4 @@ const main = async () => {
     }
 }
 
-(async function () {
-    main()
-})()
+main()
