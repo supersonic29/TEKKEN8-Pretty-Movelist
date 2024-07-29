@@ -322,9 +322,9 @@ const createMoveInputs = (move) => {
     return htmlString
 }
 
-// @TODO: Caleb, add Webpack support
+// @TODO: Caleb, Add Static Site Rendering
 const hardCodedChars = ['alisa','jun', 'reina']
-import fs from 'fs'
+
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
         const characterJSON = await loadCharacterData(hardCodedChars[i])
