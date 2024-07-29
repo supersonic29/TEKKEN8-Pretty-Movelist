@@ -118,12 +118,13 @@ function selectChar(index) {
 	if (charMenuDialog) toggleCharMenu();
 }
 
-var togglePreferences = function () {
-	if (prefDialog)
-		d3.select("#preferences").style('visibility', 'hidden');
-	else d3.select("#preferences").style('visibility', 'visible');
-
-	prefDialog = !prefDialog;
+window.togglePreferences = () => {
+	const preferences = document.getElementById('preferences')
+	if (preferences.style.visibility === 'visible') {
+		preferences.style.visibility = 'hidden'
+		return
+	}
+	preferences.style.visibility = 'visible'
 };
 
 var toggleCharMenu = function () {
@@ -134,11 +135,11 @@ var toggleCharMenu = function () {
 	charMenuDialog = !charMenuDialog;
 };
 
-var changePlatform = function (index) {
+window.changePlatform =  (index) => {
 	bl_choice = index;
-	setCookie();
-	fetchmovelist(selected_char);
+	
 };
+
 var importdata = async function importdata() {
 	getCookie();
 	d3.json("./assets/data/map_hits.json", function (err, data) {

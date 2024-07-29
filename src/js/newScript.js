@@ -1,4 +1,6 @@
 import '../css/styles.css'
+import './lib/d3.min.js'
+import './scripts.js'
 
 const baseAssetUrl = './assets/newAssets/img/'
 
@@ -175,7 +177,6 @@ const badgeToImageMap = {
 const createBadgeImages = (move) => {
     const badgeImages = Object.keys(badgeToImageMap).map(badgeName => {
         const badge = move.properties[badgeName]
-        console.log('THE BADGE!', badge)
         if (!badge) return null
         
         return `<img style="width: 36px; height: 36px;" src='./assets/newAssets/${badgeToImageMap[badgeName]}' />`
@@ -323,7 +324,7 @@ const createMoveInputs = (move) => {
 
 // @TODO: Caleb, add Webpack support
 const hardCodedChars = ['alisa','jun', 'reina']
-
+import fs from 'fs'
 const main = async () => {
     for (let i = 0; i < hardCodedChars.length; i++) {
         const characterJSON = await loadCharacterData(hardCodedChars[i])
