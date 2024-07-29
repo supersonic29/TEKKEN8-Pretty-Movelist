@@ -199,26 +199,26 @@ const createMoveHTML = (index, move) => {
                 <div class="move-special">
                     <div style="display: flex; justify-content:  flex-end;">
                         <div >
-                        ${move.frameProperties.jumpFrame >= 0 ? 'JUMP START&nbsp;' : ''}
+                        ${Number.parseInt(move.frameProperties.jumpFrame) > 0 ? 'JUMP START&nbsp;' : ''}
                         </div>
                         <div>
-                            ${move.frameProperties.jumpFrame >= 0 ? move.frameProperties.jumpFrame : ''}
+                            ${Number.parseInt(move.frameProperties.jumpFrame) > 0 ? Number.parseInt(move.frameProperties.jumpFrame) : ''}
                         </div>
                     </div>
                     <div style="display: flex; justify-content: flex-end;">
                     <div>
-                    ${move.frameProperties.crouchFrame >= 0 ? 'CROUCH START&nbsp;' : ''}
+                    ${Number.parseInt(move.frameProperties.crouchFrame) > 0 ? 'CROUCH START&nbsp;' : ''}
                         </div>
                         <div>
-                            ${move.frameProperties.crouchFrame >= 0 ? move.frameProperties.crouchFrame : ''}
+                            ${Number.parseInt(move.frameProperties.crouchFrame) > 0 ? Number.parseInt(move.frameProperties.crouchFrame) : ''}
                         </div>
                     </div>
                     <div style="display: flex;">
                         <div style="white-space: nowrap;">
-                        ${move.frameProperties.powerCrushFrame > 0 ? 'P-CRUSH' : ''}
+                        ${Number.parseInt(move.frameProperties.powerCrushFrame) > 0 ? 'P-CRUSH' : ''}
                         </div>
                         <div>
-                            ${move.frameProperties.powerCrushFrame > 0 ? '&nbsp;' + move.frameProperties.powerCrushFrame : ''}
+                            ${Number.parseInt(move.frameProperties.powerCrushFrame) > 0 ? '&nbsp;' + Number.parseInt(move.frameProperties.powerCrushFrame) : ''}
                         </div>
                         <div style="display: flex; flex-wrap: wrap;"> 
                             ${createBadgeImages(move)}
