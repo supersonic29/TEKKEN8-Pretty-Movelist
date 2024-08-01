@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--
+        ===================================
+        =   supersonic29@github.com       =
+        =   ©2024 TEKKEN8-Pretty-Movelist =
+        ===================================
+	-->
+	<title>TEKKEN 8 Pretty Movelist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="./src/css/fa/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" />
+<script defer src="bundle.js"></script></head>
+
+<body>
+	<div class="header disable-select">
+		<img src="./assets/img/logo.png">
+		<h3 class="glow">MOVELIST</h3>
+	</div>
+	<div class="main-container">
+		<div id="charmenu" class="char-menu disable-select">
+			<table class="head">
+				<tr>
+					<td class="char-menu-close" onclick="toggleCharMenu()">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</td>
+					<td class="char-head">CHARACTERS</td>
+				</tr>
+			</table>
+			<div class="inner-table">
+				<table id="characterSelect">
+				</table>
+			</div>
+		</div>
+		<div class="separator"></div>
+		<div class="char-movelist">
+			<div class="head disable-select">
+				<div class="char-menu-open" onclick="toggleCharMenu()">
+					<i class="fa fa-exchange" aria-hidden="true"></i>
+				</div>
+				<div id="selected-title" class="move-head">Paul</div>
+				<div class="opt-buttons">
+					<div class="btn-preferences" onclick="togglePreferences()">Preferences</div>
+					<div class="btn-filter">Filter</div>
+				</div>
+			</div>
+			<div id="movelist_tab" class="inner-table">
+				<table id="moveTable" class="move-table">
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="footer disable-select">
+		<p><a href="https://github.com/supersonic29/TEKKEN8-Pretty-Movelist" target="_blank"
+				style="text-decoration:none;color:#ffffff;"><i class="fa fa-github" aria-hidden="true"></i> TEKKEN 8 Pretty Movelist</a>
+			&copy;2024 | Fanmade & based on TEKKEN&trade;8's GUI | All game images are under TEKKEN&trade;8 & &copy;2024
+			BANDAI NAMCO Entertainment, Inc. copyright protection.</p>
+	</div>
+	<div id="preferences" class="preferences-dialog">
+		<div class="pref-title disable-select">
+			Preferences
+		</div>
+		<table class="pref-list">
+			<!-- <tr class="pref-language">
+				<td class="pref-id disable-select">Language</td>
+				<td class="pref-selection">
+					<select id="lang-select" onchange="setLang(this.value)">
+						<option value="1" selected="">English</option>
+						<option value="6">Deutsch</option>
+						<option value="4">Français</option>
+						<option value="5">Italiano</option>
+						<option value="11">한국어</option>
+						<option value="7">Español</option>
+						<option value="10">繁體中文</option>
+						<option value="8">русский</option>
+						<option value="0">日本語</option>
+						<option value="9">العربية</option>
+						<option value="3">Português-Brasil</option>
+					</select>
+				</td>
+			</tr> -->
+			<tr class="pref-platform">
+				<td class="pref-id disable-select">Button Layout</td>
+				<td class="pref-selection">
+					<select id="platf-select" onchange="changePlatform(this.selectedIndex)">
+						<option value="STEAM">Arcade/Steam</option>
+						<option value="PS4">Playstation</option>
+						<option value="XBOX" selected="">Xbox</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<div class="pref-close disable-select" onclick="togglePreferences()"><i class="fa fa-times"
+				aria-hidden="true"></i></div>
+	</div>
+	<video autoplay loop id="video-background" muted plays-inline>
+		<source src="./assets/video/background-fate.mp4" type="video/mp4">
+	</video>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+{
+    "character": "Alisa",
+    "thumbnail": "alisa.png",
+    "moves": [
+        {
+            "name": "Quick Slider",
+            "startup": "23",
+            "block": "-10",
+            "normalHit": "+8",
+            "counterHit": "+32",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 9,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false,
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": false,
+				"launchCH": true
+				
+            },
+            "notes": [
+                "Transition to BKP",
+				"SWL when at a distance to avoid"
+            ],
+            "input": [
+                "d3"
+            ],
+            "damageValues": [
+                {
+                    "level": "L",
+                    "damage": "17"
+                }
+            ]
+        },
+        {
+            "name": "Worm Virus",
+            "startup": "17",
+            "block": "-9",
+            "normalHit": "+4",
+            "counterHit": "+13",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false,
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": false,
+				"launchCH": false
+            },
+            "notes": [
+                "13 extra damage on CH, 28 in total",
+				"SWL when at a distance to avoid"
+            ],
+            "input": [
+                "f,F1+2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "5"
+                },
+                {
+                    "level": "M",
+                    "damage": "10"
+                }
+            ]
+        },
+        {
+            "name": "Linear Punch",
+            "startup": "13~15",
+            "block": "+5~+7",
+            "normalHit": "+28",
+            "counterHit": "+28",
+            "totalFrames": " ",
+            "frameProperties": {
+                "powerCrush": 0,
+                "jumpFrame": 3,
+                "crouchFrame": 0
+            },
+            "properties": {
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": true,
+				"eraseRecoverable": false,
+				"heatEngager": false,
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": true,
+				"launchCH": true
+            },
+            "notes": [
+                "9 chip damage on block",
+                "Transition to DES with 1+2",
+                "SWL when at a distance to avoid"
+            ],
+            "input": [
+                "f,f,F2"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "30"
+                }
+            ]
+        }
+    ]
+}

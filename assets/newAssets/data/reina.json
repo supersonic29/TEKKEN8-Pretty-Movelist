@@ -1,0 +1,318 @@
+{
+    "character": "Reina",
+    "thumbnail": "reina.png",
+    "moves": [
+        {
+            "name": "Jab",
+            "startup": "10",
+            "block": "+1",
+            "normalHit": "+8",
+            "counterHit": "+8",
+            "totalFrames": " ",
+			"wallHit": " ",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": false,
+				"launchCH": false,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                ""
+            ],
+            "input": [
+                "1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                }
+            ]
+        },
+        {
+            "name": "Flash Punch Combo (2)",
+            "startup": "10",
+            "block": "-1",
+            "normalHit": "+8",
+            "counterHit": "+8",
+            "totalFrames": " ",
+			"wallHit": " ",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": false,
+				"launchCH": false,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                "Combo from 1st NH"
+            ],
+            "input": [
+                "1,1"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "H",
+                    "damage": "6"
+                }
+            ]
+        },
+        {
+            "name": "Flash Punch Combo",
+            "startup": "10",
+            "block": "-17",
+            "normalHit": "+11",
+            "counterHit": "+11",
+            "totalFrames": " ",
+			"wallHit": "+23",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": false,
+				"launchCH": false,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                "Combo from 1st hit.",
+                "Transitions to SEN on hit",
+                "Third Hit combo can be delayed 11 frames"
+            ],
+            "input": [
+                "1,1,2"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "H",
+                    "damage": "6"
+                },
+                {
+                    "level": "M",
+                    "damage": "12"
+                }
+			]
+		},
+        {
+            "name": "Flash Punch Combo",
+            "startup": "10",
+            "block": "-17",
+            "normalHit": "+2",
+            "counterHit": "+2",
+            "totalFrames": " ",
+			"wallHit": "+14",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": false,
+				"launchCH": false,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                "Combo from 1st hit.",
+                "Back input cancels stance transition",
+                "Third Hit combo can be delayed 11 frames"
+            ],
+            "input": [
+                "1,1,2,B"
+            ],
+            "damageValues": [
+                {
+                    "level": "H",
+                    "damage": "5"
+                },
+                {
+                    "level": "H",
+                    "damage": "6"
+                },
+                {
+                    "level": "M",
+                    "damage": "12"
+                }
+			]
+		},
+        {
+            "name": "Ondeko",
+            "startup": "14",
+            "block": "-14",
+            "normalHit": "+23",
+            "counterHit": "+23",
+            "totalFrames": " ",
+			"wallHit": " ",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": true,
+				"knockdownCH": true,
+				"launchNH": false,
+				"launchCH": false,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                " "
+            ],
+            "input": [
+                "[2~1]"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "4"
+                },
+                {
+                    "level": "M",
+                    "damage": "18"
+                }
+			]
+		},
+        {
+            "name": "Ondeko (Fast Input)",
+            "startup": "14",
+            "block": "-14",
+            "normalHit": "+23",
+            "counterHit": "+23",
+            "totalFrames": " ",
+			"wallHit": " ",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": true,
+				"knockdownCH": true,
+				"launchNH": false,
+				"launchCH": false,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                " "
+            ],
+            "input": [
+                "[2~1]"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "6"
+                },
+                {
+                    "level": "M",
+                    "damage": "20"
+                }
+            ]
+        },
+        {
+            "name": "Queen Bee Stinger",
+            "startup": "15",
+            "block": "-12",
+            "normalHit": "+20",
+            "counterHit": "+20",
+            "totalFrames": " ",
+			"wallHit": " ",
+            "frameProperties": {
+                "powerCrushFrame": 0,
+                "jumpFrame": 0,
+                "crouchFrame": 0
+            },
+            "properties": {
+				"knockdownNH": false,
+				"knockdownCH": false,
+				"launchNH": true,
+				"launchCH": true,
+                "tornado": false,
+                "homing": false,
+				"powerCrush": false,
+				"forceCrouch": false,
+				"floorBreak": false,
+				"wallBreak": false,
+				"eraseRecoverable": false,
+				"heatEngager": false
+            },
+            "notes": [
+                " "
+            ],
+            "input": [
+                "df2"
+            ],
+            "damageValues": [
+                {
+                    "level": "M",
+                    "damage": "13"
+                }
+            ]
+        }
+    ]
+}
