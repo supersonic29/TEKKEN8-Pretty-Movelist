@@ -5,8 +5,8 @@
   "main": "./js/scripts.js",
   "scripts": {
     "copy-assets": "node copy-assets.js",
-    "start": "webpack serve && npm run copy-assets",
-    "build": "webpack"
+    "start": "npm run copy-assets && webpack serve",
+    "build": "webpack && npm run copy-assets"
   },
   "repository": {
     "type": "git",
