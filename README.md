@@ -7,7 +7,7 @@ https://supersonic29.github.io/TEKKEN8-Pretty-Movelist/
 
 
 # TODO List
-Styling, lol
+Styling
 
 
 ---
