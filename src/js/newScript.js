@@ -358,7 +358,7 @@ const createMoveInputs = (move) => {
 }
 
 // @TODO: Caleb, Add Static Site Rendering
-const hardCodedChars = ['alisa','jun', 'reina']
+const hardCodedChars = ['alisa','jun', 'reina','yoshimitsu']
 
 window.main = async () => {
     const ID = 'characterSelect';
